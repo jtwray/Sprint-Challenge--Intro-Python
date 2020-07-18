@@ -34,8 +34,14 @@ def cityreader(filename,cities=[]):
       csvreader= csv.reader(csvfile)
       fields= next(csvreader)
       for row in csvreader:
-        cities.append(City(**fields))
-        rows.append(row)
+        cityname=row[0]
+        lat=row[3]
+        lon=row[4]
+        lat=float(row[3])
+        lon=float(row[4])
+        if isinstance(lat, float) and isinstance(lon,float):
+          cities.append(City(cityname,lat,lon))
+          rows.append(row)
 
 
 
