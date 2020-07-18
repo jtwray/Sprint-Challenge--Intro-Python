@@ -30,13 +30,13 @@ print(a)
 # Write a list comprehension that creates a list of names of everyone
 # whose name ends in "e".
 print("Ends with e:")
-b = []
+b = [f'{i.name}' for i in humans if i.name.endswith('e')]
 print(b)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with any letter between 'C' and 'G' inclusive.
 print("Starts between C and G, inclusive:")
-c = []
+c =[f'{i.name}' for i in humans if i.name.endswith('e')]
 print(c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
