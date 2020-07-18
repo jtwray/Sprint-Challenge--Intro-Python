@@ -21,6 +21,7 @@ humans = [
     Human("David", 31),
 ]
 
+
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with 'D':
 print("Starts with D:")
@@ -36,7 +37,10 @@ print(b)
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with any letter between 'C' and 'G' inclusive.
 print("Starts between C and G, inclusive:")
-c =[f' {human.name}'for human in humans[2:-3]]
+
+c= [human.name for human in humans if human.name.startswith('C')or human.name.startswith('D') or human.name.startswith('E') or human.name.startswith('F') or human.name.startswith('G')]
+
+
 print(c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
