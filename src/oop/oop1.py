@@ -26,7 +26,7 @@ class GroundVehicle(Vehicle):
 
 class Car(GroundVehicle):
     pass
-class Motocycle(GroundVehicle):
+class Motorcycle(GroundVehicle):
     pass
 
 class FlightVehicle(Vehicle):

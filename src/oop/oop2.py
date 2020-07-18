@@ -28,7 +28,7 @@ class Motorcycle(GroundVehicle):
         
     
     def drive(self):
-        return f'BRAAAAAP!!'
+        return f'BRAAAP!!'
 
 
 vehicles = [
